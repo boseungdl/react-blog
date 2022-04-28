@@ -1,11 +1,12 @@
 import React from "react";
 import "./post.css";
+import { Link } from "react-router-dom";
 
 function Post() {
     return (
         <>
             <article class="blog">
-                <a href="./View">
+                <Link to="./View">
                     <figure class="blog__header">
                         <img src="https://source.unsplash.com/800x600/?nature" alt="" />
                     </figure>
@@ -21,7 +22,7 @@ function Post() {
                             <span class="date">1648096007</span>
                         </div>
                     </div>
-                </a>
+                </Link>
             </article>
             {/* <article class="blog">
                 <figure class="blog__header">

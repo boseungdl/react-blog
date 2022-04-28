@@ -1,5 +1,6 @@
 import React from "react";
 import "./view.css";
+import { Link } from "react-router-dom";
 
 export default function View() {
     return (
@@ -11,16 +12,16 @@ export default function View() {
                     <div>
                         <div className="info">
                             <span className="author">
-                                <a href="/">한승보</a>
+                                <Link to="/">한승보</Link>
                             </span>
                             <span className="date">1625482</span>
                         </div>
 
                         <span className="modify">
-                            <a href="/">수정</a>
+                            <Link to="/">수정</Link>
                         </span>
                         <span className="delete">
-                            <a href="/">삭제</a>
+                            <Link to="/">삭제</Link>
                         </span>
                     </div>
                 </div>
@@ -38,7 +39,6 @@ export default function View() {
                                 height="300"
                                 frameborder="0"
                                 scrolling="no"
-                                referrerpolicy="unsafe-url"
                             ></iframe>
                         </div>
                     </div>

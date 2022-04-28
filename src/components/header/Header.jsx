@@ -2,35 +2,34 @@ import React from "react";
 import "./header.css";
 import "../../assets/style/reset.css";
 import "../../assets/style/common.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <a href="/">
+                <Link to="/">
                     {" "}
                     react <em>class</em>
-                </a>
+                </Link>
             </h1>
             <nav className="menu">
-                <h2 class="ir_so">
-                    메인 메뉴<i class="fa-brands fa-angellist"></i>
-                </h2>
+                <h2 className="ir_so">메인 메뉴</h2>
                 <ul>
                     <li>
-                        <a href="./Login">회원가입</a>
+                        <Link to="./Login">회원가입</Link>
                     </li>
                     <li>
-                        <a href="/">댓글</a>
+                        <Link to="/">댓글</Link>
                     </li>
                     <li>
-                        <a href="/">게시판</a>
+                        <Link to="/">게시판</Link>
                     </li>
                     <li>
-                        <a href="/">블로그</a>
+                        <Link to="/">블로그</Link>
                     </li>
                     <li>
-                        <a href="/">퀴즈</a>
+                        <Link to="/">퀴즈</Link>
                         {/* <ul>
                             <li>
                                 <a href="/"></a>
@@ -46,13 +45,13 @@ export default function Header() {
                 </ul>
             </nav>
             <div className="member">
-                <a href="../mypage/mypage.php" class="setting">
+                <Link href="/" className="setting">
                     <img
                         src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                         alt=""
                     />
                     한승보 님 환영합니다.
-                </a>
+                </Link>
             </div>
         </header>
     );
