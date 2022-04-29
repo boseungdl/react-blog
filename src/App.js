@@ -5,13 +5,16 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import View from "./pages/view/View";
+import Join from "./pages/join/Join";
+import Write from "./pages/write/Write";
+import Mypage from "./pages/mypage/Mypage";
 
 function App() {
     return (
         <Router>
             <Header />
             <Switch>
-                <Route path="/" exact>
+                <Route path="/home" exact>
                     <Home />
                 </Route>
                 <Route path="/login" exact>
@@ -19,6 +22,15 @@ function App() {
                 </Route>
                 <Route path="/view" exact>
                     <View />
+                </Route>
+                <Route path="/join" exact>
+                    <Join />
+                </Route>
+                <Route path="/write" exact>
+                    <Write />
+                </Route>
+                <Route path="/mypage" exact>
+                    <Mypage />
                 </Route>
             </Switch>
             <Footer />

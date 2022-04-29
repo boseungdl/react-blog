@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <Link to="/">
+                <Link to="./">
                     {" "}
                     react <em>class</em>
                 </Link>
@@ -17,19 +17,19 @@ export default function Header() {
                 <h2 className="ir_so">메인 메뉴</h2>
                 <ul>
                     <li>
-                        <Link to="./Login">회원가입</Link>
+                        <Link to="./Home">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/">댓글</Link>
+                        <Link to="./Login">LOGIN</Link>
                     </li>
                     <li>
-                        <Link to="/">게시판</Link>
+                        <Link to="./Join">JOIN</Link>
                     </li>
                     <li>
-                        <Link to="/">블로그</Link>
+                        <Link to="./View">VIEW</Link>
                     </li>
                     <li>
-                        <Link to="/">퀴즈</Link>
+                        <Link to="./Write">WRITE</Link>
                         {/* <ul>
                             <li>
                                 <a href="/"></a>
@@ -45,10 +45,10 @@ export default function Header() {
                 </ul>
             </nav>
             <div className="member">
-                <Link href="/" className="setting">
+                <Link to="./Mypage" className="setting">
                     <img
                         src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                        alt=""
+                        alt="이미지"
                     />
                     한승보 님 환영합니다.
                 </Link>
